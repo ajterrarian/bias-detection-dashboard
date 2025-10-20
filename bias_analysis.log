@@ -1,0 +1,55 @@
+2025-08-31 16:12:41,323 - __main__ - INFO - Starting Day 2: Facial Recognition Bias Detection Analysis
+2025-08-31 16:12:41,323 - __main__ - INFO - Initializing components...
+2025-08-31 16:12:41,422 - api_client - INFO - AWS Rekognition client initialized successfully
+2025-08-31 16:12:41,450 - api_client - INFO - Google Cloud Vision client initialized successfully
+2025-08-31 16:12:41,452 - api_client - INFO - AWS Rekognition client initialized successfully
+2025-08-31 16:12:41,453 - api_client - INFO - Google Cloud Vision client initialized successfully
+2025-08-31 16:12:41,454 - __main__ - INFO - Testing API connections...
+2025-08-31 16:12:42,707 - api_client - ERROR - AWS Rekognition test failed: An error occurred (InvalidImageFormatException) when calling the DetectFaces operation: Request has invalid image format
+2025-08-31 16:12:43,190 - api_client - INFO - Google Cloud Vision test: SUCCESS
+2025-08-31 16:12:43,191 - __main__ - INFO - API Connection Status: {'aws': False, 'google': True}
+2025-08-31 16:12:43,191 - __main__ - INFO - Loading sample dataset...
+2025-08-31 16:12:43,191 - data_pipeline - INFO - Loaded sample dataset with 16 images
+2025-08-31 16:12:43,191 - __main__ - INFO - Processing dataset (this may take several minutes)...
+2025-08-31 16:12:43,192 - data_pipeline - INFO - Processing demographic group: young_male
+2025-08-31 16:12:43,192 - data_pipeline - INFO - Processing young_male image 1/2
+2025-08-31 16:12:45,083 - data_pipeline - INFO - Processing young_male image 2/2
+2025-08-31 16:12:47,144 - data_pipeline - INFO - Processing demographic group: young_female
+2025-08-31 16:12:47,145 - data_pipeline - INFO - Processing young_female image 1/2
+2025-08-31 16:12:47,431 - data_pipeline - WARNING - Attempt 1 failed for https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400: 404 Client Error: Not Found for url: https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400
+2025-08-31 16:12:47,534 - data_pipeline - WARNING - Attempt 2 failed for https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400: 404 Client Error: Not Found for url: https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400
+2025-08-31 16:12:47,632 - data_pipeline - WARNING - Attempt 3 failed for https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400: 404 Client Error: Not Found for url: https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400
+2025-08-31 16:12:47,632 - data_pipeline - ERROR - Failed to download image after 3 attempts: https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400
+2025-08-31 16:12:47,633 - data_pipeline - INFO - Processing young_female image 2/2
+2025-08-31 16:12:51,103 - data_pipeline - INFO - Processing demographic group: middle_aged_male
+2025-08-31 16:12:51,104 - data_pipeline - INFO - Processing middle_aged_male image 1/2
+2025-08-31 16:12:52,049 - data_pipeline - INFO - Processing middle_aged_male image 2/2
+2025-08-31 16:12:52,844 - data_pipeline - INFO - Processing demographic group: middle_aged_female
+2025-08-31 16:12:52,844 - data_pipeline - INFO - Processing middle_aged_female image 1/2
+2025-08-31 16:12:53,764 - data_pipeline - INFO - Processing middle_aged_female image 2/2
+2025-08-31 16:12:54,695 - data_pipeline - INFO - Processing demographic group: elderly_male
+2025-08-31 16:12:54,696 - data_pipeline - INFO - Processing elderly_male image 1/1
+2025-08-31 16:12:55,450 - data_pipeline - INFO - Processing demographic group: elderly_female
+2025-08-31 16:12:55,451 - data_pipeline - INFO - Processing elderly_female image 1/1
+2025-08-31 16:12:56,381 - data_pipeline - INFO - Processing demographic group: light_skin
+2025-08-31 16:12:56,381 - data_pipeline - INFO - Processing light_skin image 1/2
+2025-08-31 16:12:57,244 - data_pipeline - INFO - Processing light_skin image 2/2
+2025-08-31 16:12:57,363 - data_pipeline - WARNING - Attempt 1 failed for https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400: 404 Client Error: Not Found for url: https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400
+2025-08-31 16:12:57,437 - data_pipeline - WARNING - Attempt 2 failed for https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400: 404 Client Error: Not Found for url: https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400
+2025-08-31 16:12:57,525 - data_pipeline - WARNING - Attempt 3 failed for https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400: 404 Client Error: Not Found for url: https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400
+2025-08-31 16:12:57,525 - data_pipeline - ERROR - Failed to download image after 3 attempts: https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400
+2025-08-31 16:12:57,526 - data_pipeline - INFO - Processing demographic group: medium_skin
+2025-08-31 16:12:57,526 - data_pipeline - INFO - Processing medium_skin image 1/2
+2025-08-31 16:12:58,374 - data_pipeline - INFO - Processing medium_skin image 2/2
+2025-08-31 16:12:59,301 - data_pipeline - INFO - Processing demographic group: dark_skin
+2025-08-31 16:12:59,302 - data_pipeline - INFO - Processing dark_skin image 1/2
+2025-08-31 16:13:00,411 - data_pipeline - INFO - Processing dark_skin image 2/2
+2025-08-31 16:13:01,470 - data_pipeline - INFO - Results saved to results/sample_results.json
+2025-08-31 16:13:01,470 - __main__ - INFO - Preparing bias analysis data...
+2025-08-31 16:13:01,470 - __main__ - INFO - Performing bias analysis...
+2025-08-31 16:13:01,473 - __main__ - INFO - Creating visualizations...
+2025-08-31 16:13:01,619 - visualization - INFO - Visualization saved to ./output/accuracy_heatmap.html
+2025-08-31 16:13:01,664 - visualization - INFO - Visualization saved to ./output/bias_disparity_chart.html
+2025-08-31 16:13:01,691 - visualization - INFO - Visualization saved to ./output/demographic_comparison.html
+2025-08-31 16:13:01,718 - visualization - INFO - Visualization saved to ./output/comprehensive_dashboard.html
+2025-08-31 16:13:01,718 - __main__ - INFO - Day 2 analysis completed successfully!
